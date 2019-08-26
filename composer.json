@@ -1,0 +1,30 @@
+{
+    "name": "ritin\/laravel-transform",
+    "description": "This is a API transform for laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zzw6105",
+            "email": "zzw6105@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "~5.5",
+        "league/fractal": "^0.16.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Ritin\\LaravelTransform\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ritin\\LaravelTransform\\LaravelTransformProvider"
+            ]
+        }
+    }
+}
